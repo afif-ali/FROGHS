@@ -1,0 +1,55 @@
+.common { color: #9db8c5; }
+.uncommon { color: #a8b164; }
+.rare { color: #d37755; }
+.unique { color: #b6607c; }
+.legendary { color: #dec575; }
+
+/* UNCOMMON */
+img.greeny          { content: url(res/img/common/greeny/front.png);   }
+img.greeny:hover    { content: url(res/img/common/greeny/side.png);    }
+
+img.ory          { content: url(res/img/common/ory/front.png);   }
+img.ory:hover    { content: url(res/img/common/ory/side.png);    }
+
+img.pinky          { content: url(res/img/common/pinky/front.png);   }
+img.pinky:hover    { content: url(res/img/common/pinky/side.png);    }
+
+/* COMMON */
+img.bubblit          { content: url(res/img/uncommon/bubblit/front.png);   }
+img.bubblit:hover    { content: url(res/img/uncommon/bubblit/side.png);    }
+
+img.fernwick          { content: url(res/img/uncommon/fernwick/front.png);   }
+img.fernwick:hover    { content: url(res/img/uncommon/fernwick/side.png);    }
+
+img.zint          { content: url(res/img/uncommon/zint/front.png);   }
+img.zint:hover    { content: url(res/img/uncommon/zint/side.png);    }
+
+/* RARE */
+img.lumiboo          { content: url(res/img/rare/lumiboo/front.png);   }
+img.lumiboo:hover    { content: url(res/img/rare/lumiboo/side.png);    }
+
+img.shrooma          { content: url(res/img/rare/shrooma/front.png);   }
+img.shrooma:hover    { content: url(res/img/rare/shrooma/side.png);    }
+
+img.thornid          { content: url(res/img/rare/thornid/front.png);   }
+img.thornid:hover    { content: url(res/img/rare/thornid/side.png);    }
+
+/* UNIQUE */
+img.cloktok          { content: url(res/img/unique/cloktok/front.png);   }
+img.cloktok:hover    { content: url(res/img/unique/cloktok/side.png);    }
+
+img.gribblet          { content: url(res/img/unique/gribblet/front.png);   }
+img.gribblet:hover    { content: url(res/img/unique/gribblet/side.png);    }
+
+img.vellune          { content: url(res/img/unique/vellune/front.png);   }
+img.vellune:hover    { content: url(res/img/unique/vellune/side.png);    }
+
+/* LEGENDARY */
+img.embergulp          { content: url(res/img/legendary/embergulp/front.png);   }
+img.embergulp:hover    { content: url(res/img/legendary/embergulp/side.png);    }
+
+img.myrrmog          { content: url(res/img/legendary/myrrmog/front.png);   }
+img.myrrmog:hover    { content: url(res/img/legendary/myrrmog/side.png);    }
+
+img.nillith          { content: url(res/img/legendary/nillith/front.png);   }
+img.nillith:hover    { content: url(res/img/legendary/nillith/side.png);    }

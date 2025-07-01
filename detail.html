@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROGHS - Home</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+</head>
+<body class="dark">
+    <div class="container">
+        <a href="/froghs.html">< GO BACK</a>
+        <div class="frogh">
+            <div class="about">
+                <img id="img" src="res/img/common/">
+                <div class="text">
+                    <h2 id="name">...</h2>
+                    <p>
+                        <span class="category">RARITY:</span> <span id="rarity">...</span><br>
+                        <span class="category">HABITAT:</span> <span id="habitat">...</span><br>
+                        <span class="category">ABILITY:</span> <span id="ability">...</span><br>
+                        <span class="category">DESCRIPTION: </span> <span id="description">...</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="moreinfo">
+            <h2>MORE INFO:</h2>
+            <p id="moreinfo">...</p>
+        </div>
+        <section class="param">
+            <button class="singing-frog sleep" onclick="toggleMusic()" title="Music by Toby Fox"></button>
+            <audio id="music" src="res/audio/music.mp3" loop></audio>
+            <footer>
+                Made with ❤️ by Ali<br>Afif Mohamed Ali © 2025 All rights reserved
+            </footer>
+        </section>
+    </div>
+    <button class="theme" onclick="toggleTheme()">DARK/LIGHT MODE</button>
+    <script src="script.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>

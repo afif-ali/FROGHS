@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Daydream;
+  src: url(res/fonts/Daydream.ttf);
+}
+@font-face {
+  font-family: Rainyhearts;
+  src: url(res/fonts/rainyhearts.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rainyhearts;
+    image-rendering: pixelated;
+    color: #2a202a;
+    text-decoration: none;
+}
+
+:root {
+    --bg: #d9d3d9;
+    --fg: #2d494b;
+    --text: #2a202a;
+    --title1: #6f975e;
+    --title2: #3b6b58;
+    --sub: #3b6b58;
+}
+.dark {
+    --bg: #2a202a;
+    --fg: #2d494b;
+    --text: #d9d3d9;
+    --title1: #6f975e;
+    --title2: #3b6b58;
+    --sub: #c55650;
+}
+
+body {
+    background: var(--bg);
+
+    .container {
+        border: var(--fg) solid 5px;
+        margin: 1rem;
+        margin-bottom: 2rem;
+        height: calc(100vh - 10px - 3rem);
+        overflow: scroll;
+        scrollbar-width: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: start;
+
+        a {
+            color: #c55650;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        .cards {
+            padding: 2rem;
+            padding-top: 0;
+            
+            .text {
+                text-align: left;
+                margin: 2rem;
+                
+                .name { font-size: 3rem; width: 5rem;}
+            }
+            .card {
+                cursor: pointer;
+                background-color: #8a2e3f;
+                border: #dec575 5px solid;
+                padding: 1rem;
+                overflow: scroll;
+                scrollbar-width: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 2rem;
+                max-width: 50rem;
+                img {
+                    width: 12rem;
+                    height: 12rem;
+                    margin: 0;
+                }
+                
+                h3 { font-size: 1.5rem; }
+                
+                .name {
+                    color: #d9d3d9;
+                    font-size: 3rem;
+                    padding-right: 1rem;
+                    width: 5rem;
+                }
+                
+                
+                
+                .text {
+                    text-align: left;
+                    margin: 2rem;
+                }
+            }        
+            .card:hover { transform: scale(1.05); transition: 0.1s;}
+        }
+
+        .param {
+            margin-top:auto;
+            .singing-frog {
+                width: 8rem;
+                height: 8rem;
+                margin-left: 1rem;
+                cursor: pointer;
+                background-image: url(res/img/singing-frogh-day.png);
+                background-size: 16rem;
+                background-color: transparent;
+                border: none;
+                animation: singing-frog 2s steps(2) infinite;
+            }
+            .singing-frog.night {background-image: url(res/img/singing-frogh-night.png);}
+            .singing-frog.sleep {background-position-y: 100%;}
+            .singing-frog.sing {background-position-y: 0%;}
+        }
+        
+        footer {
+            background-color: var(--fg);
+            padding: 2rem;
+            text-align: center;
+            color: #d9d3d9;
+            font-size: 1.5rem;
+        }
+    }
+    .theme {
+        position: absolute;
+        bottom: 0.2rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        color: var(--text);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
+@keyframes singing-frog {
+    0% { background-position-x:   0%; }
+  100% { background-position-x: 200%; }
+}

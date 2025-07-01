@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROGHS - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+</head>
+<body class="dark">
+    <div class="container">
+        <h1 class="title">FROGHS</h1>
+        <section class="welcome">
+            <h2>WELCOME TO THE WORLD OF FROGHS!</h2>
+            <p>Froghs are fictional, mystical creatures inspired by frogs, each with unique abilities, traits, and personalities.<br>This site is a growing archive of frogh species, created with pixel art and imagination. Explore their world, meet each frogh, and learn what makes them special.</p>
+        </section>
+        <section class="froghs">
+            <h2>MEET THE CAST!</h2>
+            <div class="cards">
+            <a href="detail.html?frogh=greeny">
+                <div class="card">
+                    <img class="greeny">
+                    <div class="text">
+                        <h3 class="common">Common</h3>
+                        <h3 class="name">Greeny</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html?frogh=vellune">
+                <div class="card">
+                    <img class="vellune">
+                    <div class="text">
+                        <h3 class="unique">Unique</h3>
+                        <h3 class="name">Vellune</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="detail.html?frogh=nillith">
+                <div class="card">
+                    <img class="nillith">
+                    <div class="text">
+                        <h3 class="legendary">Legendary</h3>
+                        <h3 class="name">Nillith</h3>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <h3 class="explore"><a href="froghs.html">See more...</a></h3>
+        </section>
+        <section class="moreinfo">
+            <div class="text">
+                <h2>MORE ABOUT FROGHS</h2>
+                <p>Froghs are all over the wornold planning a domitation scheme, they seem powerless... but only few have discovered their true powers. It is predicted that froghs will dominate the entire galaxy during the next 100 years.<br>Froghs also love to eat human flesh, as it's what allows them to morph into rarer froghs and thus become even more powerful. This ability to morph, or as some call it: "level up", is the reason why humans still don't know everything about froghs</p>
+            </div>
+            <img src="res/img/pond.png" alt="" class="pond">
+        </section>
+        <section class="param">
+            <button class="singing-frog sleep" onclick="toggleMusic()" title="Music by Toby Fox"></button>
+            <audio id="music" src="res/audio/music.mp3" loop></audio>
+            <footer>
+                Made with ❤️ by Ali<br>Afif Mohamed Ali © 2025 All rights reserved
+            </footer>
+        </section>
+    </div>
+    <button class="theme" onclick="toggleTheme()">DARK MODE</button>
+    <script src="script.js"></script>
+</body>
+</html>

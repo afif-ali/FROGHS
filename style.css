@@ -1,0 +1,212 @@
+@font-face {
+  font-family: Daydream;
+  src: url(res/fonts/Daydream.ttf);
+}
+@font-face {
+  font-family: Rainyhearts;
+  src: url(res/fonts/rainyhearts.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rainyhearts;
+    image-rendering: pixelated;
+    color: #2a202a;
+    text-decoration: none;
+}
+
+:root {
+    --bg: #d9d3d9;
+    --fg: #2d494b;
+    --text: #2a202a;
+    --title1: #6f975e;
+    --title2: #3b6b58;
+    --sub: #3b6b58;
+}
+.dark {
+    --bg: #2a202a;
+    --fg: #2d494b;
+    --text: #d9d3d9;
+    --title1: #6f975e;
+    --title2: #3b6b58;
+    --sub: #c55650;
+}
+
+body {
+    background: var(--bg);
+
+    .container {
+        border: var(--fg) solid 5px;
+        margin: 1rem;
+        margin-bottom: 2rem;
+        height: calc(100vh - 10px - 3rem);
+        overflow: scroll;
+        scrollbar-width: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: start;
+
+        h1 {
+            font-size: min(calc(10vw), 7rem);
+            font-family: Daydream;
+            text-align: center;
+            padding: 3rem;
+            color: var(--title1) ;
+            filter: drop-shadow(min(1vw, 0.7rem) min(1vw, 0.7rem) var(--title2));
+        }
+        
+        .welcome {
+            padding: 2rem;
+            max-width: 1024px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            h2 {
+                text-align: center;
+                color: var(--sub);
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+                text-align: center;
+                color: var(--text);
+            }
+        }
+
+        .froghs {
+            width: calc(100% - 4rem);
+            background-color: var(--fg) ;
+            padding: 2rem;
+
+            h2 {
+                text-align: center;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+                color: #d9d3d9;
+            }
+
+            .cards {
+                display: flex;
+                justify-content: center;
+                
+                @media all and (max-width:830px) { flex-direction: column; }
+                
+                a:nth-child(2) { margin: 0rem 2rem; }
+                @media all and (max-width:830px) { a:nth-child(2) {margin: 2rem 0rem} }
+
+                .card {
+                    cursor: pointer;
+                    background-color: #8a2e3f;
+                    border: #dec575 5px solid;
+                    text-align: center;
+                    padding: 1rem;
+                    min-width: 12rem;
+                    overflow: scroll;
+                    scrollbar-width: none;
+                    img {
+                        width: 12rem;
+                        height: 12rem;
+                        margin: 0;
+                    }
+                    
+                    h3 { font-size: 1.5rem; }
+                    
+                    .name {
+                        color: #d9d3d9;
+                        font-size: 2rem;
+                        padding-right: 1rem;
+                    }
+                    
+                    
+                    @media all and (max-width:830px) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: left;
+                        align-items: center;
+                        
+                        .text {
+                            text-align: left;
+                            margin: 2rem;
+                            
+                            .name { font-size: 3rem; width: 5rem;}
+                        }
+                    }
+                }            
+                .card:hover { transform: scale(1.05); transition: 0.1s;}
+            }
+
+            .explore {
+                text-align: right;
+                a { color: #a83f48;}
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
+        }
+
+        .moreinfo {
+            display: flex;
+            align-items: center;
+            @media all and (max-width:830px) {flex-direction: column-reverse;}
+            
+            .text {
+                margin: 2rem 0rem 2rem 2rem;
+                h2 {
+                    color: var(--sub);
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                    color: var(--text);
+                }
+                @media all and (max-width:830px) {text-align: center; margin: 1rem;}
+            }
+
+            .pond {
+                height: 20rem;
+            }
+        }
+
+        .param {
+            margin-top:auto;
+            .singing-frog {
+                width: 8rem;
+                height: 8rem;
+                margin-left: 1rem;
+                cursor: pointer;
+                background-image: url(res/img/singing-frogh-day.png);
+                background-size: 16rem;
+                background-color: transparent;
+                border: none;
+                animation: singing-frog 2s steps(2) infinite;
+            }
+            .singing-frog.night {background-image: url(res/img/singing-frogh-night.png);}
+            .singing-frog.sleep {background-position-y: 100%;}
+            .singing-frog.sing {background-position-y: 0%;}
+        }
+        
+        footer {
+            background-color: var(--fg);
+            padding: 2rem;
+            text-align: center;
+            color: #d9d3d9;
+            font-size: 1.5rem;
+        }
+    }
+    .theme {
+        position: absolute;
+        bottom: 0.2rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        color: var(--text);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
+@keyframes singing-frog {
+    0% { background-position-x:   0%; }
+  100% { background-position-x: 200%; }
+}
