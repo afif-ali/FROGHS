@@ -1,7 +1,7 @@
 ### WELOCOME TO THE WORLD OF FROGHS
 Froghs are fictional, mystical creatures inspired by frogs, each with unique abilities, traits, and personalities. This site is a growing archive of frogh species, created with pixel art and imagination. Explore their world, meet each frogh, and learn what makes them special.
 
-<img src="/res/img/pond.png" style="width: 100%; image-rendering: pixelated; image-rendering: crisp-edges; image-rendering: -moz-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: optimizeSpeed; image-rendering: optimize-contrast; image-rendering: -o-crisp-edges;">
+<img src="/res/img/readmeimg.png" style="width: 100%;">
 
 
 ### MORE ABOUT FROGHS
