@@ -191,6 +191,9 @@ body {
             text-align: center;
             color: #d9d3d9;
             font-size: 1.5rem;
+            a {
+                color: #a83f48;
+            }
         }
     }
     .theme {
