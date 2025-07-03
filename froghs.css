@@ -130,6 +130,21 @@ body {
             a {
                 color: #a83f48;
             }
+            h3 { color: #d9d3d9; }
+            div {
+                display: flex;
+                max-width: 25rem;
+                margin: auto;
+                text-align: left;
+                justify-content: space-between;
+                a {
+                    color: #c55650;
+                }
+                @media all and (max-width:830px) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
         }
     }
     .theme {
